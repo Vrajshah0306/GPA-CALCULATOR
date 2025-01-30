@@ -13,21 +13,21 @@
     <nav class="navbar" >
         <ul>
             <li><a href="index.html"><h5><img src="GPA_calc_icon.png" alt="icon"><span>   GPA CALCULATOR</span></h5></a></li>
-            <li><a href="About_me.html"><u>About me</u></a></li>
+            <li><a href="index.html"><u>Home</u></a></li>
             <li><a href="Grade_Scale.html"><u>Grade scale</u></a></li>
             <li><a href="Steps.html"><u>What are the steps to calculate my gpa?</u></a></li>
             <li><a href="Class_grade.html"><u>Class Grade Calculator</u></a></li>
             <li><a href="FAQ.html"><u>FAQ</u></a></li>
         </ul>
     </nav>
-    <div class="page">
-        <div class="title" >
+    <div class="Steps_page">
+        <div class="Steps_title" >
             <h1><b><u><i>Steps</i></u></b></h1>
         </div>
         
-        <hr class="Page_lines">
-        <h3 class="Questions">1. What key information do you need to know?</h3>
-        <ul class="Answer">
+        <hr class="Steps_Page_lines">
+        <h3 class="Steps_Questions">1. What key information do you need to know?</h3>
+        <ul class="Steps_Answer">
             <li>Credit Hours - The number of hours assigned to a course, usually between 1 to 5 hours, based on the course's workload and complexity.</li>
             <br>
             <li>Grade Value - The numeric value assigned to a letter grade (e.g., A = 4.0, B = 3.0, C = 2.0, D = 1.0, F = 0.0).</li>
@@ -42,53 +42,86 @@
             <br>
             <li>Cumulative GPA - The overall GPA calculated using all the grades and credit hours from all completed terms up to the present.</li>
         </ul>
-        <h3 class="Questions">2. Basic Formula </h3>
-        <ul class="Answer">
+        <h3 class="Steps_Questions">2. Basic Formula </h3>
+        <ul class="Steps_Answer">
+        
             <li>What is the formula for calculating GPA for one semester?</li>
-            <p>$$GPA = grade $$</p>
+            <ul>
+                <li>Step One: Calculate the grade point based on the semester.</li>
+                <ul>
+                    <li>For each class Convert the letter grade to credit value.</li>
+                    <p>EX: Getting a A in a certain class means the Letter grade is 4.0.</p>
+                    <li>After that multiply the Grade values by the corolating credit hours to get the grade points for each class.</li>
+                    <p>$$GradePoint =  Credit Hour X Grade Value$$</p>
+                    <li>At the end add all the grade points and then divid them by the total credit hours.</li>
+                    <p>$$TotalGradePoints =  Grade points + GradePoints....$$</p>
+                </ul>
+                <li>Step Two: Calculate the total amount of Credit Hours</li>  
+                <ul>
+                    <li>Add all the Credit hours in the semester.</li>
+                    <p>$$TotalCreditHours = Credit Hours + Credit Hours... $$</p>
+                </ul>
+                <li>Step Three: Now divide the <i>TotalGradePoints</i> by the <i>TotalCreditHours</i> </li>
+                <p>$$GPA = \frac{TotalGradePoints}{TotalCreditHours} $$</p>                
+            </ul>
             <li>What is the formula for calculating the cumilative GPA?</li>
-            <p></p>
+            <ul>
+                <li>So for the cumilative <i>GPA</i> follow steps 1 and 2 after that add all the total:</li>
+                <ul>
+                    <p>$$GPA = \frac{SemesterOneGPA + SemesterTwoGPA...}{SemesterOneCreditHours + SemesterTwoCreditHours...}$$</p>
+                </ul>
+            </ul>
         </ul> 
-        <h3 class="Questions">3. What scale am I using right now?</h3>
-        <h3 class="Questions">4. Live Example </h3>
-        <ul class="Answer">
+        <h3 class="Steps_Questions">3. What scale am I using right now?</h3>
+        <ul class="Steps_Answer">
+            <li><p>As of now the Current Scale is based on a 4 point scale. <a style="color: white;" href="Grade_Scale.html">Click here to reference.</a></p></li>
+        </ul>
+        <h3 class="Steps_Questions">4. Live Example </h3>
+        <ul class="Steps_Answer">
             <li> An example of calculating GPA.</li>
             <li>What happens to GPA if I retake a course and get a better grade?</li>
             <li> An example of calculating GPA with failed courses.(BAsed on Rutgers GPA policy)</li>
         </ul>
-        <h3 class="Questions">6. additonal resoures</h3>
-        <hr class="Page_lines">
-        <div class="title">
+        <h3 class="Steps_Questions">6. additonal resoures</h3>
+        <hr class="Steps_Page_lines">
+        <div class="Steps_title">
             <h1><b><u><i>Steps FAQ</i></u></b></h1>
-            <hr class="Page_lines">
+            <hr class="Steps_Page_lines">
         </div>
-        <h3 class="Questions">1. How do I calculate GPA if I have courses with different credit hours?</h3>
-        <h3 class="Questions">2. What happens if I fail a course? How does it affect the calculation?</h3>
-        <h3 class="Questions">3. How do I use these steps to evaluate my academic progress?</h3>
-        <h3 class="Questions">3. What mistakes should I avoid when calculating my GPA?</h3>
-        <h3 class="Questions">3. </h3>
-        <h3 class="Questions">3. </h3>
+        <h3 class="Steps_Questions">1. How do I calculate GPA if I have courses with different credit hours?</h3>
+        <h3 class="Steps_Questions">2. What happens if I fail a course? How does it affect the calculation?</h3>
+        <h3 class="Steps_Questions">3. How do I use these steps to evaluate my academic progress?</h3>
+        <h3 class="Steps_Questions">3. What mistakes should I avoid when calculating my GPA?</h3>
+        <h3 class="Steps_Questions">3. </h3>
+        <h3 class="Steps_Questions">3. </h3>
 
     </div>
 
-    <hr id="PageEnd">
-    <div id="Contact">
-        <div>
-            <ul>
-                <li>a</li>
-            </ul>
+    <div id="Contact_Bottom">
+        <hr id="Contact_PageEnd">
+        <div id="Contact_text">
+            <div>
+                <p class="Contact_PageEnd_Text_Header"><b><u><i>Contact US</i></u></b></p>
+                <ul>
+                    <li class="Contact_PageEnd_Text" style="color: black;"><a href="Contact_Us.html"><u>Contact Us</u></a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="Contact_PageEnd_Text_Header"><b><u><i>Extra Resourses</i></u></b></p>
+                <ul>
+                    <li>a</li>
+                </ul>
+            </div>
+            <div>
+                <p class="Contact_PageEnd_Text_Header"><b><u><i>Extra Resourses</i></u></b></p>
+                <ul>
+                    <li>a</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <ul>
-                <li>a</li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>a</li>
-            </ul>
-        </div>
+        <br> <br> <br> 
     </div>
+    
     <script src="app.js"></script>
 </body>
 </html> 
